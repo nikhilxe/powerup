@@ -15,17 +15,21 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   <Container>
     <Sectionhead>
       <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
-    </Sectionhead>
+      <Fragment slot="desc">Our Mission: Empowering Restaurants to Succeed in the Digital World !<br>
+
+        At DineBoost, we’re passionate about helping restaurants create a powerful online presence and retain loyal customers. In an industry where first impressions matter, we believe every restaurant deserves a website that showcases its unique style and story. <wbr> That’s why we developed DineBoost — a platform designed to help restaurants not only create beautiful, customizable websites but also leverage customer insights for long-term success.
+        
+       <br> By combining cutting-edge technology with deep industry insights, we’re helping restaurants stay competitive and thrive in the digital age.</Fragment>
+    
+       
+      </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
+        Empowering your buisness with cutting edge tech.
       </h2>
       <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
+        
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
@@ -48,6 +52,9 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>
+
+
+              
             </div>
           </div>
         ))
